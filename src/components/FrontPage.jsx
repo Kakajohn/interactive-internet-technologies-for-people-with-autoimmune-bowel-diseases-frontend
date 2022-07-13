@@ -14,7 +14,7 @@ const FrontPage = () => {
       {/* main content */}
       <div className='container'>
         <div className='row'>
-          <div className='col-10'>
+          <div className='col-10' style={{marginLeft:'4rem'}}>
             <MedCareSection />
           </div>
 

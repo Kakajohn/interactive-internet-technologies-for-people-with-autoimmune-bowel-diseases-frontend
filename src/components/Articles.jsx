@@ -52,7 +52,7 @@ const Articles = () => {
         <div class='row'>
           <div class='col-10'>
             <section id='medcare' className='row'>
-              <div className='col-12'>
+              <div className='col-12'style={{marginLeft:'4rem'}}>
                 <h1 className='text-center text-danger py-4'>Familial Adenomatous Polyposis (F.A.P.)</h1>
                 <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
                   <div className='card-body'>

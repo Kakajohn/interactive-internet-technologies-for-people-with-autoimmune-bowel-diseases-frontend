@@ -807,7 +807,7 @@ const Articles = () => {
           </div>
           {/* <span>scroll up</span>
           <BackToTop /> */}
-          <div class='col-2'>
+          <div class='col-2' style={{marginLeft:'2rem'}}>
             <main>
               <div class='section-nav'>
                 <ol

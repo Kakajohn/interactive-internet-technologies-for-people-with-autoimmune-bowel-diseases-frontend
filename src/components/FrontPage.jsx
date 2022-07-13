@@ -21,7 +21,7 @@ const FrontPage = () => {
           <div className='col-2'>
             {/* Side nav */}
 
-            <nav id='side-nav' class='section-nav' style={{ position: 'fixed' }}>
+            <nav id='side-nav' class='section-nav' style={{ position: 'fixed', marginLeft:'2rem' }}>
               <ol style={{ background: '#121212', borderRadius: '1em' }}>
                 <li class=''>
                   <a href='#medcare'>Medical Care</a>

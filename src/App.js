@@ -6,7 +6,6 @@ import Login from './components/Login';
 import Messenger from './components/Messenger';
 import ProtectRoute from './components/ProtectRoute';
 import Register from './components/Register';
-import Pagenotfound from './components/Pagenotfound'
 
 function App() {
   return (
@@ -39,7 +38,6 @@ function App() {
               // </ProtectRoute>
             }
           />
-          <Route path="/*" element={<Pagenotfound/>} />
         </Routes>
       </BrowserRouter>
     </div>

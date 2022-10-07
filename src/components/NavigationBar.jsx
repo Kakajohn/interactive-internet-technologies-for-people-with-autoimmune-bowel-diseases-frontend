@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../sass/components/_navbar.scss'
 const NavigationBar = () => {
   return (
-    <header id='head'>
+    <header className='head'>
      <div class="topnav">
         <Link class="active" to="/">Home</Link>
         <Link to="/med4u/articles">Articles</Link>

@@ -5,27 +5,6 @@ import { Link, useNavigate } from 'react-router-dom';
 const HomePage = () => {
   return (
     <>
-      {/* <header>
-        <nav>
-          <div class='menu-icon'>
-            <i class='fa fa-bars fa-2x'></i>
-          </div>
-          <div class='logo'></div>
-          <div class='menu'>
-            <ul>
-              <li>
-                <Link to={'/'}>Home</Link>
-              </li>
-              <li>
-                <Link to='/med4u/articles'> Articles</Link>
-              </li>
-              <li>
-                <Link to='/med4u/chat'>Chat</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header> */}
       <main>
         <div>
           <section id='medcare'>

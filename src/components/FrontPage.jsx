@@ -18,34 +18,7 @@ const FrontPage = () => {
             <MedCareSection />
           </div>
 
-          <div className='col-2'>
-            {/* Side nav */}
-
-            <nav id='side-nav' class='section-nav' style={{ position: 'fixed', marginLeft:'2rem' }}>
-              <ol style={{ background: '#121212', borderRadius: '1em' }}>
-                <li class=''>
-                  <a href='#medcare'>Medical Care</a>
-                </li>
-
-                <li>
-                  <a href='#need'>Telemedicine</a>
-                </li>
-                <li>
-                  <a href='#auto'>Autoimmune Diseases</a>
-                </li>
-                <li class=''>
-                  <a href='#medit'>Medical IT</a>
-                </li>
-                <li class=''>
-                  <a href='#follow'>Patients from Home</a>
-                </li>
-                {/*	<li class=""><a href="#options">Treatment Options</a></li>
-					<li class=""><a href="#future">Future treatments</a></li>
-					<li class=""><a href="#support">Coping and support</a></li>
-                    <li class=""><a href="#quest">Questionairie</a></li>*/}
-              </ol>
-            </nav>
-          </div>
+         
         </div>
       </div>
       <Footer />

@@ -1,8 +1,8 @@
 ## Med for you (Frontend) for deploy on Netlify.
 
 This is the frontend of the project Med for you, that is my final thesis for **Aristotle University of Thessaloniki**. 
-If you want to see the whole project please visit [a link](https://github.com/Kakajohn/Med-For-You).
-This repository is connected to netlify, so you can visit it via link [a link](https://633fe73fc27f31000801d2b9--delightful-souffle-604d1d.netlify.app/).
+If you want to see the whole project please visit [Med for you repository](https://github.com/Kakajohn/Med-For-You).
+This repository is connected to netlify, so you can visit it via link [netlify version](https://633fe73fc27f31000801d2b9--delightful-souffle-604d1d.netlify.app/).
 The project was meant to work only on laptop screens, but at the moment i am improving its functionality and responsiveness for mobile and tablet too.
 
 ## About the project Med for you
@@ -32,5 +32,5 @@ This website is for patients with autoimmune diseases (such as **F.A.P.** and **
 
  ``npm i``
  ``npm start``
- View here the project after running : [a link](http://localhost:3000/)
+ View here the project after running : [view local](http://localhost:3000/)
 

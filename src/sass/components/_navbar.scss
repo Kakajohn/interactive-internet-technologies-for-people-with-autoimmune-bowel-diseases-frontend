@@ -24,21 +24,23 @@ h6 {
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
+  border-radius: 4p4x;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #0a0a0a;
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #972e3d;
+  background: #222230;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(192, 189, 189, 0.61);
 }
 
 .logo {
@@ -53,14 +55,11 @@ h6 {
 }
 
 nav {
-  /* position: fixed; */
-  /* width: 100%; */
   line-height: 2rem;
 }
 
-nav ul {
-  /*  height: 4em;
-    line-height: 60px;*/
+nav {
+  ul {
   list-style: none;
   background: #972e3d;
   overflow: hidden;
@@ -70,7 +69,7 @@ nav ul {
   margin: 0;
   padding-right: 40px;
   transition: 1s;
-}
+}}
 
 a:hover {
   text-decoration: none;
@@ -80,74 +79,28 @@ a:hover {
 }
 
 nav.black ul {
-  background: #000;
+  background: 0;
 }
-/* 
-nav ul li {
-  display: inline-block;
-  padding: 16px 40px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-} */
 
 .menu-icon {
   line-height: 60px;
   width: 100%;
-  background: #000;
+  background: 0;
   text-align: right;
   box-sizing: border-box;
   padding: 15px 24px;
   cursor: pointer;
-  color: #fff;
+  color: #0c0c0c;
   display: none;
 }
 
-/* @media(max-width: 786px) {
-
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-    }
-
-    nav ul {
-          max-height: 0px;
-          background: #ffffff;
-    }
-
-    nav.black ul {
-          background: #000;
-    }
-
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-
-} */
-/* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: 0;
   overflow: hidden;
   position: fixed;
   border-radius: 5px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -157,19 +110,27 @@ nav ul li a {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  filter: drop-shadow(2px -2px 2px white);
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #972e3d;
-  color: white;
-}
 
 .head{
   display: flex;
   justify-content: center;
 }
+
+.navbtn {
+  flex: 1 1 auto;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px;
+  background: #0a0a0a9e
+ }
+

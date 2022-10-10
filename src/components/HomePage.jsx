@@ -250,7 +250,7 @@ const HomePage = () => {
           </section>
         </div>
         <nav class='section-nav'>
-          <ol style={{ background: '#0000009e', borderRadius: '1em' }}>
+          <ol style={{  borderRadius: '1em' }}>
             <li class=''>
               <a href='#medcare'>Medical Care</a>
             </li>

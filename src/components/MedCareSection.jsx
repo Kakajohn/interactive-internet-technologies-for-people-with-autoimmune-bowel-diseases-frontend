@@ -1,12 +1,28 @@
 import React from 'react';
-
+import '../sass/components/_articles.scss'
 const MedCareSection = () => {
   return (
     <>
+    <div className='area'>
+          <ul className='circles'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
       <section id='medcare' className='row'>
+        
+       
         <div className='col-12'>
           <h1 className='text-center text-danger py-4'>Let's take a look at what telemedicine is.</h1>
-          <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
+          <div className='card text-light border-danger border-2'>
             <div className='card-body'>
               <h2 class='text-center'>What is distance medical care?</h2>
 
@@ -66,12 +82,13 @@ const MedCareSection = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
       <section id='medcare' className='row'>
         <div className='col-12'>
           <h1 className='text-center text-danger pt-2 pb-3'>Why we need telemedicine?.</h1>
-          <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
+          <div className='card text-light border-danger border-2'>
             <div className='card-body'>
               <p>
                 The need for distance medical care The main needs covered by telemedicine applications are summarized
@@ -228,7 +245,7 @@ const MedCareSection = () => {
       <section id='medcare' className='row'>
         <div className='col-12'>
           <h1 className='text-center text-danger pt-2 pb-3'>Follow-up of patients from home</h1>
-          <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
+          <div className='card text-light border-danger border-2' style={{ }}>
             <div className='card-body'>
               <p>
                 In this section we will discuss how useful its services are at home to people with chronic diseases.
@@ -275,6 +292,7 @@ const MedCareSection = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

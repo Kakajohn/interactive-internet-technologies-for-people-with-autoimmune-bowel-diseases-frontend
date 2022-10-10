@@ -807,7 +807,7 @@ const Articles = () => {
           </div>
           {/* <span>scroll up</span>
           <BackToTop /> */}
-          <div class='col-2' style={{marginLeft:'2rem'}}>
+          {/* <div class='col-2' style={{marginLeft:'2rem'}}>
             <main>
               <div class='section-nav'>
                 <ol
@@ -830,19 +830,16 @@ const Articles = () => {
                       <li>
                         <a href='#overview'>Overview</a>
                       </li>
-                      <li class=''>
+                      <li className="">
                         <a href='#symptoms'>Symptoms & Causes</a>
                       </li>
-                      {/* <li class=""><a href="#tests">Tests</a></li> */}
                       <li>
                         <a href='#fdiagnosis'>Diagnosis</a>
                       </li>
-                      <li class=''>
+                      <li className="">
                         <a href='#ftreatment'>Treatment</a>
                       </li>
-                      {/* <li class=""><a href="#folloq">Follow-up treatment</a></li> */}
-                      {/*	<li class=""><a href="#ptreatments">Potential future treatments</a></li>*/}
-                      <li class=''>
+                      <li className="">
                         <a href='#coping'>Coping and support</a>
                       </li>
                     </ul>
@@ -857,16 +854,14 @@ const Articles = () => {
                       <li>
                         <a href='#causes'>Causes</a>
                       </li>
-                      <li class=''>
+                      <li className="">
                         <a href='#diagnosis'>Diagnosis</a>
                       </li>
-                      {/* <li class=""><a href="#endoscopy">Endoscopy</a></li> */}
-                      <li class=''>
+                      <li className="">
                         <a href='#options'>Treatment</a>
                       </li>
-                      {/*	<li class=""><a href="#future">Future treatments</a></li>
-					              <li class=""><a href="#support">Coping and support</a></li>*/}
-                      <li class=''>
+                     
+                      <li className="">
                         <a href='#quest'>Questionairie</a>
                       </li>
                     </ul>
@@ -874,7 +869,7 @@ const Articles = () => {
                 </ol>
               </div>
             </main>
-          </div>
+          </div> */}
         </div>
       </div>
 

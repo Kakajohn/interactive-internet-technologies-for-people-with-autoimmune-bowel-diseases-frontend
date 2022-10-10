@@ -6,10 +6,12 @@ import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 
 import MedCareSection from './MedCareSection';
+import Popup from './Popup';
 const FrontPage = () => {
   return (
     <>
       {/* header */}
+      <Popup />
       <NavigationBar />
       {/* main content */}
       <div className='container'>

@@ -2,7 +2,7 @@
 
 This is the frontend of the project Med for you, that is my final thesis for **Aristotle University of Thessaloniki**. 
 If you want to see the whole project please visit [Med for you repository](https://github.com/Kakajohn/Med-For-You).
-This repository is connected to netlify, so you can visit it via link [netlify version](https://633fe73fc27f31000801d2b9--delightful-souffle-604d1d.netlify.app/).
+This repository is connected to netlify, so you can visit it via link [netlify version](https://63440d2da10b7202053910cd--delightful-souffle-604d1d.netlify.app/).
 The project was meant to work only on laptop screens, but at the moment i am improving its functionality and responsiveness for mobile and tablet too.
 
 ## About the project Med for you

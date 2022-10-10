@@ -1,63 +1,15 @@
-import React from 'react';
-import '../sass/components/_top_button.scss';
-import '../sass/components/_navbar.scss';
-import '../sass/components/_articles.scss';
-import { Link, useNavigate } from 'react-router-dom';
-import NavigationBar from './NavigationBar';
-
+import React from 'react'
+import NavigationBar from './NavigationBar'
+import '../sass/components/_articles.scss'
 const Articles = () => {
-  window.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        if (entry.intersectionRatio > 0) {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-        } else {
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-        }
-      });
-    });
-
-    // Track all sections that have an `id` applied
-    document.querySelectorAll('section[id]').forEach(section => {
-      observer.observe(section);
-    });
-  });
-
   return (
     <>
-      {/* <header>
-        <nav>
-          <div class='menu-icon'>
-            <i class='fa fa-bars fa-2x'></i>
-          </div>
-          <div class='logo'></div>
-          <div class='menu'>
-            <ul>
-              <li>
-                <Link to={'/'}>Home</Link>
-              </li>
-              <li>
-                <Link to='/med4u/articles'> Articles</Link>
-              </li>
-              <li>
-                <Link to='/med4u/chat'>Chat</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header> */}
-      <NavigationBar />
-      <div class='container'>
-        <div class='row'>
-          <div class='col-10'>
-            <section id='medcare' className='row'>
-              <div className='col-12'style={{marginLeft:'4rem'}}>
-                <h1 className='text-center text-danger py-4'>Familial Adenomatous Polyposis (F.A.P.)</h1>
-                <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
-                  <div className='card-body'>
-                    {/* <h1 id='overview'>Familial Adenomatous Polyposis (F.A.P.)</h1> */}
-                    <h2>Overview</h2>
+    <NavigationBar />
+    <div className="content">
+        <h1 id='header'>Welcome to Med for You</h1>
+      <div className="secondary">
+        <div className="col-8 ">
+        <h2 id='define-new-section'>Overview</h2>
                     <p style={{ textAlign: 'justify', fontFamily: 'Raleway, sans-serif' }}>
                       Familial adenomatous polyposis (FAP) is an inherited disorder characterized by cancer of the large
                       intestine (colon ) and rectum. People with the classic type of familial adenomatous polyposis may
@@ -76,7 +28,7 @@ const Articles = () => {
                       (AFAP). People with AFAP usually have fewer colon polyps (an average of 30) and develop cancer
                       later in life.
                     </p>
-                    <h1>Symptoms & Causes</h1>
+                    <h1 id='define-new-section'>Symptoms & Causes</h1>
                     <p>
                       The main sign of FAP is hundreds or even thousands of polyps growing in your colon and rectum,
                       usually starting by your mid-teens. The polyps are nearly 100 percent certain to develop into
@@ -84,7 +36,7 @@ const Articles = () => {
                       caused by a defect in a gene that's usually inherited from a parent. But some people develop the
                       abnormal gene that causes the condition.{' '}
                     </p>
-                    <h4>Risk factors & Complications</h4>
+                    <h4 id='define-new-section'>Risk factors & Complications</h4>
                     <p>
                       Your risk of familial adenomatous polyposis is higher if you have a parent, child, brother, or
                       sister with the condition.
@@ -134,7 +86,7 @@ const Articles = () => {
                         </li>
                       </ul>
                     </p>
-                    <h1>Diagnosis</h1>
+                    <h1 id='define-new-section'>Diagnosis</h1>
                     <p>
                       You're at risk of familial adenomatous polyposis if you have a parent, child, brother or sister
                       with the condition. If you're at risk, it's important to be screened frequently, starting in
@@ -164,7 +116,7 @@ const Articles = () => {
                         </li>
                       </ul>
                     </p>
-                    <h2 id='genetic'>Genetic Testing</h2>
+                    <h2 id='define-new-section'>Genetic Testing</h2>
                     <p>
                       A simple blood test can determine if you carry the abnormal gene that causes FAP. Genetic testing
                       may also detect whether you're at risk of complications of FAP. Your doctor may suggest genetic
@@ -183,19 +135,19 @@ const Articles = () => {
                         </li>
                       </ul>
                     </p>
-                    <h2 id='ftreatment'>Additional tests</h2>
+                    <h2 id='define-new-section'>Additional tests</h2>
                     <p>
                       Your doctor may recommend thyroid exams and other tests to detect other medical problems that can
                       occur if you have FAP.
                     </p>
-                    <h1>Treatment</h1>
+                    <h1 id='define-new-section'>Treatment</h1>
                     <p>
                       At first, your doctor will remove any small polyps found during your colonoscopy exam. Eventually,
                       though, the polyps will become too numerous to remove individually, usually by your late teens or
                       early 20s. Then you will need surgery to prevent colon cancer. You will also need surgery if a
                       polyp is cancerous. You may not need surgery for AFAP.
                     </p>
-                    <h2>Minimally invasive colorectal surgery</h2>
+                    <h2 id='define-new-section'>Minimally invasive colorectal surgery</h2>
                     <p>
                       Your surgeon may decide to perform your surgery laparoscopically, through several small incisions
                       that require just a stitch or two to close. This minimally invasive surgery usually shortens your
@@ -218,7 +170,7 @@ const Articles = () => {
                       💡 Total proctocolectomy with ileoanal anastomosis (also called J-pouch surgery), in which the
                       colon and rectum are removed and a part of the small intestine is attached to the rectum <br />
                     </li>
-                    <h2 id='folloq'>Follow-up treatment</h2>
+                    <h2 id='define-new-section'>Follow-up treatment</h2>
                     <p>
                       Surgery doesn't cure FAP. Polyps can continue to form in the remaining or reconstructed parts of
                       your colon, stomach and small intestine. Depending on the number and size of the polyps, having
@@ -256,13 +208,13 @@ const Articles = () => {
                         reasons.
                       </li>
                     </ul>
-                    <h2 id='coping'>Potential future treatments</h2>
+                    <h2 id='define-new-section'>Potential future treatments</h2>
                     <p>
                       Researchers continue to evaluate additional treatments for FAP. In particular, the use of pain
                       relievers such as aspirin and nonsteroidal anti-inflammatory drugs (NSAIDs), as well as a
                       chemotherapy drug, are being investigated.
                     </p>
-                    <h1>Coping and Support</h1>
+                    <h1 id='define-new-section'>Coping and Support</h1>
                     <p style={{ fontWeight: 'bold', fontSize: 'large' }}>
                       Some people find it helpful to talk with others who share similar experiences. Consider joining an
                       online support group, or ask your doctor about support groups in your area.
@@ -283,17 +235,12 @@ const Articles = () => {
                       <li>💡 How accurate is genetic testing?</li>
                       <p id='Crohn'></p>
                     </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section id='medcare' className='row'>
-              <div className='col-12' style={{marginLeft:'4rem'}}>
-                <h1 className='text-center text-danger py-4'>Crohn.</h1>
-                <div className='card text-light border-danger border-2' style={{ backgroundColor: '#151515' }}>
-                  <div className='card-body'>
-                    <h1>Crohn's Disease.</h1>
-                    <h2></h2>
+           </div>
+      </div>
+      <div className="secondary" id='define-new-section'>
+      <div className="col-8 ">
+      <h1 id='define-new-section'>Crohn's Disease.</h1>
+                    
                     <p style={{ textAlign: 'justify', fontFamily: 'Raleway, sans-serif' }}>
                       Crohn’s disease is an inflammatory bowel disease that causes chronic inflammation of the
                       gastrointestinal tract. ​If you have been diagnosed with Crohn’s disease or are looking for more
@@ -301,7 +248,7 @@ const Articles = () => {
                       illness can be stressful and overwhelming. We can provide you with information and resources to
                       help you manage the physical and emotional symptoms of Crohn’s disease.
                     </p>
-                    <h2>Overview</h2>
+                    <h2 id='define-new-section'>Overview</h2>
                     <p>
                       Crohn’s disease is a chronic inflammatory condition of the gastrointestinal tract. Understanding
                       Crohn’s disease can help you and your loved ones navigate the uncertainty that comes with a new
@@ -343,8 +290,8 @@ const Articles = () => {
                         diseased intestine
                       </li>
                     </ul>
-                    <h1>Causes</h1>
-                    <br /> <h2>Here's what we do know:</h2>
+                    <h1 id='define-new-section'>Causes</h1>
+                    <br /> <h2 id='define-new-section'>Here's what we do know:</h2>
                     <ul>
                       <li>💡 Men and women are equally likely to be affected.</li>
                       <li>
@@ -376,7 +323,8 @@ const Articles = () => {
                         Crohn’s disease.
                       </li>
                     </ul>
-                    <br /> <h2>Genetic Factors</h2>
+                    <br />
+                     <h2 id='define-new-section'>Genetic Factors</h2>
                     <p>
                       Crohn’s disease tends to run in families, so if you or a close relative has the disease, your
                       family members have an increased chance of developing Crohn’s. Studies have shown that between 5%
@@ -401,7 +349,7 @@ const Articles = () => {
                     </ul>
                     {/*} <br /> <h2>Environmental Factors</h2>
             <p>Where you live appears to play a role in the development of Crohn’s disease.</p>*/}
-                    <br /> <h2>Here’s where Crohn’s disease is more common:</h2>
+                    <br /> <h2 id='define-new-section'>Here’s where Crohn’s disease is more common:</h2>
                     <ul>
                       <li>💡 Developed countries, rather than undeveloped countries</li>
                       <li>💡 Urban cities and towns, rather than rural areas</li>
@@ -476,7 +424,7 @@ const Articles = () => {
                       will speak to you and ask questions about your overall health, diet and nutrition, family history,
                       and your daily routine.
                     </p>
-                    <br /> <h2>What to Expect</h2>
+                    <br /> <h2 id='define-new-section'>What to Expect</h2>
                     <ul>
                       <li>
                         💡 Your doctor may order diagnostic testing to look for signs of Crohn’s disease and rule out
@@ -493,7 +441,7 @@ const Articles = () => {
                         ease your stress and help you later remember information from your doctor.
                       </li>
                     </ul>
-                    <h3>Communication Tips</h3>
+                    <h3 id='define-new-section'>Communication Tips</h3>
                     <ul>
                       <li>
                         💡 Write down your symptoms and bring it to your appointments, so you don’t have to worry about
@@ -510,7 +458,7 @@ const Articles = () => {
                       these tests are more invasive and may sound frightening, they are often done in an outpatient
                       setting and your health care providers will be careful to minimize any discomfort.
                     </p>
-                    <br /> <h2>Endoscopy</h2>
+                    <br /> <h2 id='define-new-section'>Endoscopy</h2>
                     <p>
                       Your doctor may recommend an endoscopy to get a detailed look at the inside of your colon using a
                       small camera mounted to the end of a lighted tube.
@@ -573,7 +521,7 @@ const Articles = () => {
                       </li>
                       <li>💡 A balloon endoscopy may be needed to view hard-to-reach areas of the intestine.</li>
                     </ul>
-                    <h3 id='options'>Communication Tips</h3>
+                    <h3 id='define-new-section'>Communication Tips</h3>
                     <ul>
                       <li>
                         💡 Ask your healthcare providers what to expect during the procedure and if there are any risks
@@ -693,7 +641,7 @@ const Articles = () => {
                         lower quadrant of the abdomen
                       </li>
                     </ul>
-                    <br /> <h2>Gastroduodenal Crohn's Disease</h2>
+                    <br /> <h2 id='define-new-section'>Gastroduodenal Crohn's Disease</h2>
                     <p>
                       This type affects the stomach and the beginning of the small intestine, called the duodenum.
                       Symptoms may include:
@@ -715,7 +663,7 @@ const Articles = () => {
                       <li>Diarrhea</li>
                       <li>Fistulas may form in severe cases or after prolonged periods of inflammation</li>
                     </ul>
-                    <br /> <h2>Crohn's (Granulomatous) Colitis</h2>
+                    <br /> <h2 id='define-new-section'>Crohn's (Granulomatous) Colitis</h2>
                     <p>This type affects only the colon, also known as the large intestine.</p>
                     <ul>
                       Symptoms may include:
@@ -730,7 +678,7 @@ const Articles = () => {
                       <li>💡 Affects only the innermost lining of the colon</li>
                       <li>💡 Inflammation of the intestine does not “skip”</li>
                     </ul>{' '}
-                    <h2>Crohn’s Disease vs. Ulcerative Colitis</h2>
+                    <h2 id='define-new-section'>Crohn’s Disease vs. Ulcerative Colitis</h2>
                     <p>
                       Crohn’s disease and ulcerative colitis share similar symptoms and they are both types of
                       inflammatory bowel disease (IBD), but they are not the same illness and they affect different
@@ -760,7 +708,7 @@ const Articles = () => {
                       more informed you are about Crohn’s disease, the better equipped you will be to manage your
                       disease and lead the life you want to live.
                     </p>
-                    <br /> <h2> Understanding Crohn’s Disease What causes Crohn’s? disease</h2>
+                    <br /> <h2 id='define-new-section'> Understanding Crohn’s Disease What causes Crohn’s? disease</h2>
                     <ul>
                       <li>💡What are the signs and symptoms of Crohn’s?</li>
                       <li>💡 What type of Crohn’s do I have?</li>
@@ -783,7 +731,7 @@ const Articles = () => {
                       <li>💡 Will I require surgery? If so, what does that entail?</li>
                       <li>💡 What other treatments are available?</li>
                     </ul>
-                    <br /> <h2>Managing Your Disease</h2>
+                    <br /> <h2 id='define-new-section'>Managing Your Disease</h2>
                     <ul>
                       <li>💡 How can I prevent flare-ups?</li>
                       <li>💡 When should I see a doctor?</li>
@@ -800,80 +748,10 @@ const Articles = () => {
                         questions.
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          {/* <span>scroll up</span>
-          <BackToTop /> */}
-          {/* <div class='col-2' style={{marginLeft:'2rem'}}>
-            <main>
-              <div class='section-nav'>
-                <ol
-                  style={{
-                    borderRadius: '1em',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    padding: '0'
-                  }}
-                >
-                  <li>
-                    <a href='#introduction'>F.A.P.</a>
-                    <ul
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        padding: '0px !important'
-                      }}
-                    >
-                      <li>
-                        <a href='#overview'>Overview</a>
-                      </li>
-                      <li className="">
-                        <a href='#symptoms'>Symptoms & Causes</a>
-                      </li>
-                      <li>
-                        <a href='#fdiagnosis'>Diagnosis</a>
-                      </li>
-                      <li className="">
-                        <a href='#ftreatment'>Treatment</a>
-                      </li>
-                      <li className="">
-                        <a href='#coping'>Coping and support</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href='#Crohn'>Crohn</a>
-                    <ul>
-                      <li>
-                        <a href='#over'>Overview</a>
-                      </li>
-                      <li>
-                        <a href='#causes'>Causes</a>
-                      </li>
-                      <li className="">
-                        <a href='#diagnosis'>Diagnosis</a>
-                      </li>
-                      <li className="">
-                        <a href='#options'>Treatment</a>
-                      </li>
-                     
-                      <li className="">
-                        <a href='#quest'>Questionairie</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-            </main>
-          </div> */}
-        </div>
       </div>
-
-      <footer style={{ textAlign: 'center', padding: '5px', color: 'rgb(235 230 230 / 48%)' }}>
+      </div>
+    </div>
+    <footer style={{ textAlign: 'center', padding: '5px', color: 'rgb(235 230 230 / 48%)' }}>
         You can contact us at{' '}
         <a style={{ color: 'rgb(235 230 230 / 48%)' }} href='mailto:kakaziag@csd.auth.gr'>
           kakaziag@csd.auth.gr{' '}
@@ -882,7 +760,7 @@ const Articles = () => {
         This University Thesis created by Gkakazianis. ❤
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Articles;
+export default Articles

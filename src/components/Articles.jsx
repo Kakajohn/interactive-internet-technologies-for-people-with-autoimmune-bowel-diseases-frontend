@@ -1,13 +1,66 @@
 import React from 'react'
+import { useRef,useEffect, useState } from 'react';
 import NavigationBar from './NavigationBar'
 import '../sass/components/_articles.scss'
 import Footer from './Footer'
 const Articles = () => {
+
+  const [click, setClick] = useState(false)
+
+  const [clicked, setClicked] = useState(false)
+
+  let [count, setCount] = useState(0);
+
+  const ref = useRef(null);
+
+  const showmore = () => {
+     setClick(true);
+     document.getElementById('less').style.visibility = 'visible';
+     document.getElementById('read').style.visibility = 'collapse' ;      
+     count ++;
+     setCount(count)
+     console.log(count)
+  }
+
+  const showless = () => {
+    setClick(false);
+    document.getElementById('less').style.visibility = 'collapse';
+    document.getElementById('read').style.visibility = 'visible';
+   
+  }
+  const show = () => {
+    setClicked(true);
+    document.getElementById('less2').style.visibility = 'visible';
+    document.getElementById('read2').style.visibility = 'collapse' ;
+  }
+  const hide = () => {
+    setClicked(false);
+    document.getElementById('less2').style.visibility = 'hidden';
+    document.getElementById('read2').style.visibility = 'visible' ;
+  }
+  useEffect(()=>{
+    if(click === false || clicked === false){
+      document.getElementById('more').style.visibility = 'collapse' ;
+      document.getElementById('less').style.visibility = 'collapse';
+      document.getElementById('read').style.visibility = 'visible' ;
+
+      document.getElementById('more2').style.visibility = 'collapse' ;
+      document.getElementById('less2').style.visibility = 'collapse';
+      document.getElementById('read2').style.visibility = 'visible' ;
+      console.log(click, setClick)
+    }else if(click === true || clicked === true) {
+      document.getElementById('read').style.visibility = 'collapse' ;
+      document.getElementById('more').style.visibility = 'visible' ;
+
+      document.getElementById('read2').style.visibility = 'collapse' ;
+      document.getElementById('more2').style.visibility = 'visible' ;
+    }
+  },[setClick])
   return (
     <>
     <NavigationBar />
     <div className="content-a">
-        <h1 id='header'>Welcome to Med for You</h1>
+        <h1 id='header'>Familial Adenomatous Polyposis</h1>
       <div className="secondary-a">
         <div className="col-8 ">
         <h2 id='define-new-section'>Overview</h2>
@@ -27,9 +80,9 @@ const Articles = () => {
                       cancer, but they can usually be managed by careful monitoring and by removing polyps regularly.
                       Some people have a milder form of the condition, called attenuated familial adenomatous polyposis
                       (AFAP). People with AFAP usually have fewer colon polyps (an average of 30) and develop cancer
-                      later in life.
-                    </p>
-                    <h1 id='define-new-section'>Symptoms & Causes</h1>
+                      later in life. <p id='more'></p>
+                    </p> <button id='read' onClick={showmore} ref={ref}>Click to read more...</button><button id='less' onClick={showless} ref={ref}>Click to read less...</button>
+                  {click && (<span id='more'>  <h1 id='define-new-section'>Symptoms & Causes</h1>
                     <p>
                       The main sign of FAP is hundreds or even thousands of polyps growing in your colon and rectum,
                       usually starting by your mid-teens. The polyps are nearly 100 percent certain to develop into
@@ -159,7 +212,8 @@ const Articles = () => {
                         or all of the colon:
                       </p>
                     </p>
-                    <li>
+                   <ul>
+                   <li>
                       💡 Subtotal colectomy with ileorectal anastomosis, in which the rectum is left in place <br />{' '}
                     </li>
                     <li>
@@ -171,6 +225,7 @@ const Articles = () => {
                       💡 Total proctocolectomy with ileoanal anastomosis (also called J-pouch surgery), in which the
                       colon and rectum are removed and a part of the small intestine is attached to the rectum <br />
                     </li>
+                   </ul>
                     <h2 id='define-new-section'>Follow-up treatment</h2>
                     <p>
                       Surgery doesn't cure FAP. Polyps can continue to form in the remaining or reconstructed parts of
@@ -234,8 +289,8 @@ const Articles = () => {
                       <li>💡 Will surgery cure my FAP?</li>
                       <li>💡 If not, what follow-up and treatment will I need?</li>
                       <li>💡 How accurate is genetic testing?</li>
-                      <p id='Crohn'></p>
-                    </ul>
+                      {/* <p id='Crohn'></p> */}
+                    </ul></span>)}
            </div>
       </div>
       <div className="secondary-a" id='define-new-section'>
@@ -289,9 +344,9 @@ const Articles = () => {
                       <li>
                         💡 Inflammation of the intestine can “skip,” or leave normal areas in between patches of
                         diseased intestine
-                      </li>
-                    </ul>
-                    <h1 id='define-new-section'>Causes</h1>
+                      </li> <p id='more2'></p>
+                    </ul> <button id='read2' onClick={show} ref={ref}>Click to read more...</button><button onClick={hide} id='less2' ref={ref}>Click to read less...</button>
+                  {clicked && (<span>  <h1 id='define-new-section'>Causes</h1>
                     <br /> <h2 id='define-new-section'>Here's what we do know:</h2>
                     <ul>
                       <li>💡 Men and women are equally likely to be affected.</li>
@@ -554,7 +609,7 @@ const Articles = () => {
                       over time, periods of remission can be extended and periods of symptom flare ups can be reduced.
                       Several types of medication are being used to treat Crohn's disease today.
                       <br />
-                      <h4>Combination Therapy</h4>
+                      <h3>Combination Therapy</h3>
                       In some circumstances, a health care provider may recommend adding an additional therapy that will
                       work in combination with the initial therapy to increase its effectiveness. For example,
                       combination therapy could include the addition of a biologic to an immunomodulator. As with all
@@ -588,7 +643,7 @@ const Articles = () => {
                       (anastomosis). While these procedures may cause your symptoms to disappear for many years, Crohn’s
                       frequently recurs later in life.
                     </p>
-                    <h4>Key things to know about Surgery:</h4>
+                    <h3>Key things to know about Surgery:</h3>
                     <ul>
                       <li>
                         💡 Over a span of 5 years, studies have shown that 18% of Crohn's patients may eventually
@@ -748,7 +803,7 @@ const Articles = () => {
                         💡 Ask your doctor or nurse how best to contact them in between appointments with follow up
                         questions.
                       </li>
-                    </ul>
+                    </ul></span>)}
       </div>
       </div>
     </div>

@@ -45,6 +45,17 @@ p{
   text-align:justify;
   font-size: 18px;
 }
+#read , #less,#read2 , #less2{
+  visibility: visible;
+  background: #0a0a0a87;
+  color: #fff;
+  border: unset;
+  cursor: pointer;
+}
+ul>li{
+  font-size: 18px;
+  text-align: left;
+}
 @media  (max-width:600px){
   h1, h2, h3, h4 , h5{
       font-size: 16px;

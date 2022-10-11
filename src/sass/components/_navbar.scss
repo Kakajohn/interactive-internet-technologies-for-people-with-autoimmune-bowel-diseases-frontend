@@ -21,27 +21,40 @@ h6 {
   text-align: justify;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-  border-radius: 4p4x;
-}
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #222230;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 12px;
+//   border-radius: 4p4x;
+// }
 
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #0a0a0a;
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #222230;
-}
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(192, 189, 189, 0.61);
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #222230;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: rgba(192, 189, 189, 0.61);
+// }
 
 .logo {
   line-height: 60px;

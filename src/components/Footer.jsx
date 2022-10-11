@@ -8,7 +8,7 @@ const Footer = () => {
         kakaziag@csd.auth.gr{' '}
       </a>
       <br />
-      This University Thesis created by Gkakazianis. ❤
+      This University Thesis was created by Gkakazianis. ❤
     </footer>
   );
 };

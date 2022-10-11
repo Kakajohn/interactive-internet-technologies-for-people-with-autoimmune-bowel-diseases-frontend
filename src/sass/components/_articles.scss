@@ -30,19 +30,20 @@ body {
   height: 240vh;
 }
 
-.content{
+.content-a{
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-.secondary{
+.secondary-a{
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-flow: wrap;
   justify-content: center;
 }
 p{
   text-align:justify;
+  font-size: 18px;
 }
 }
 #define-new-section{

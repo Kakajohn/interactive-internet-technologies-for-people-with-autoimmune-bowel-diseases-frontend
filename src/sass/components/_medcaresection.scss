@@ -1,0 +1,41 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  .secondary{
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  p{
+    text-align:justify;
+  }
+  h1{
+    margin: 12px;
+    padding: 12px;
+}
+  #read , #less,#read2 , #less2{
+    visibility: visible;
+    background: #0a0a0a87;
+    color: #fff;
+    border: unset;
+    cursor: pointer;
+  }
+  
+  }
+  #define-new-section{
+    margin-top: 2rem;
+  }
+  
+  #header{
+    text-align: center;
+  }
+  ul{
+    li{
+      text-align: left;
+    }
+  }
+
+ 

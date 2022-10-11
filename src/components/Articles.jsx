@@ -1,13 +1,14 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
 import '../sass/components/_articles.scss'
+import Footer from './Footer'
 const Articles = () => {
   return (
     <>
     <NavigationBar />
-    <div className="content">
+    <div className="content-a">
         <h1 id='header'>Welcome to Med for You</h1>
-      <div className="secondary">
+      <div className="secondary-a">
         <div className="col-8 ">
         <h2 id='define-new-section'>Overview</h2>
                     <p style={{ textAlign: 'justify', fontFamily: 'Raleway, sans-serif' }}>
@@ -237,7 +238,7 @@ const Articles = () => {
                     </ul>
            </div>
       </div>
-      <div className="secondary" id='define-new-section'>
+      <div className="secondary-a" id='define-new-section'>
       <div className="col-8 ">
       <h1 id='define-new-section'>Crohn's Disease.</h1>
                     
@@ -751,14 +752,7 @@ const Articles = () => {
       </div>
       </div>
     </div>
-    <footer style={{ textAlign: 'center', padding: '5px', color: 'rgb(235 230 230 / 48%)' }}>
-        You can contact us at{' '}
-        <a style={{ color: 'rgb(235 230 230 / 48%)' }} href='mailto:kakaziag@csd.auth.gr'>
-          kakaziag@csd.auth.gr{' '}
-        </a>
-        <br />
-        This University Thesis created by Gkakazianis. ❤
-      </footer>
+    <Footer />
     </>
   )
 }

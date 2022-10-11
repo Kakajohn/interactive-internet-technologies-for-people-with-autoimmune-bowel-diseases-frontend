@@ -249,9 +249,9 @@ const HomePage = () => {
             </ul>
           </section>
         </div>
-        <nav class='section-nav'>
+        <nav className='section-nav'>
           <ol style={{  borderRadius: '1em' }}>
-            <li class=''>
+            <li className=''>
               <a href='#medcare'>Medical Care</a>
             </li>
 
@@ -261,16 +261,16 @@ const HomePage = () => {
             <li>
               <a href='#auto'>Autoimmune Diseases</a>
             </li>
-            <li class=''>
+            <li className=''>
               <a href='#medit'>Medical IT</a>
             </li>
-            <li class=''>
+            <li className=''>
               <a href='#follow'>Patients from Home</a>
             </li>
-            {/*	<li class=""><a href="#options">Treatment Options</a></li>
-					<li class=""><a href="#future">Future treatments</a></li>
-					<li class=""><a href="#support">Coping and support</a></li>
-                    <li class=""><a href="#quest">Questionairie</a></li>*/}
+            {/*	<li className=""><a href="#options">Treatment Options</a></li>
+					<li className=""><a href="#future">Future treatments</a></li>
+					<li className=""><a href="#support">Coping and support</a></li>
+                    <li className=""><a href="#quest">Questionairie</a></li>*/}
           </ol>
         </nav>
       </main>

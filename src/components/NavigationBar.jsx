@@ -7,7 +7,7 @@ import {Accordion} from 'react-bootstrap-accordion'
 const NavigationBar = () => {
   return (
     <header className='head'>
-     <div class="topnav">
+     <div className="topnav">
         <Link className="navbtn navbtn-3" to="/">Home</Link>
         <Link className='navbtn navbtn-3' to="/med4u/articles">Articles</Link>
         <Link className='navbtn navbtn-3' to="/med4u/chat">Chat</Link>

@@ -13,10 +13,10 @@ const MedCareSection = () => {
 
      setClick(true);
      document.getElementById('less').style.visibility = 'visible';
-     document.getElementById('read').style.visibility = 'hidden' ;  
+     document.getElementById('read').style.visibility = 'collapse' ;  
      
      document.getElementById('less2').style.visibility = 'visible';
-     document.getElementById('read2').style.visibility = 'hidden' ;  
+     document.getElementById('read2').style.visibility = 'collapse' ;  
      count ++;
      setCount(count)
      console.log(count)
@@ -25,29 +25,29 @@ const MedCareSection = () => {
 
   const showless = () => {
     setClick(false);
-    document.getElementById('less').style.visibility = 'hidden';
+    document.getElementById('less').style.visibility = 'collapse';
     document.getElementById('read').style.visibility = 'visible';
    
-    document.getElementById('less2').style.visibility = 'hidden';
+    document.getElementById('less2').style.visibility = 'collapse';
     document.getElementById('read2').style.visibility = 'visible';
    
   }
 
   useEffect(()=>{
     if(click === false ){
-      document.getElementById('more').style.visibility = 'hidden' ;
-      document.getElementById('less').style.visibility = 'hidden';
+      document.getElementById('more').style.visibility = 'collapse' ;
+      document.getElementById('less').style.visibility = 'collapse';
       document.getElementById('read').style.visibility = 'visible' ;
 
-      document.getElementById('more2').style.visibility = 'hidden' ;
-      document.getElementById('less2').style.visibility = 'hidden';
+      document.getElementById('more2').style.visibility = 'collapse' ;
+      document.getElementById('less2').style.visibility = 'collapse';
       document.getElementById('read2').style.visibility = 'visible' ;
       console.log(click, setClick)
     }else if(click === true ) {
-      document.getElementById('read').style.visibility = 'hidden' ;
+      document.getElementById('read').style.visibility = 'collapse' ;
       document.getElementById('more').style.visibility = 'visible' ;
 
-      document.getElementById('read2').style.visibility = 'hidden' ;
+      document.getElementById('read2').style.visibility = 'collapse' ;
       document.getElementById('more2').style.visibility = 'visible' ;
     }
   },[setClick])
@@ -101,7 +101,7 @@ const MedCareSection = () => {
                   comparable health outcomes in traditional patient patient meetings, provide greater patient
                   satisfaction and be more economical.
                 </li>
-              </ul></span>)}
+              </ul>
               <p>
                 Telemedicine is sometimes used as a synonym or in a more limited sense to describe remote clinical
                 services, such as diagnosis and monitoring. When rural areas, lack of transportation, lack of mobility,
@@ -111,7 +111,7 @@ const MedCareSection = () => {
                 remote access or physiotherapy via digital monitoring instruments. All these tests should be forwarded
                 to a senior specialist for monitoring. In order to evaluate information through the continuous flow of
                 information for the proper creation of the platform for communication between the participants.{' '}
-              </p>
+              </p></span>)}
             </div>
             <div className="col-8">
           <h1 className='text-center text-danger pt-2 pb-3'>Why we need telemedicine?.</h1>

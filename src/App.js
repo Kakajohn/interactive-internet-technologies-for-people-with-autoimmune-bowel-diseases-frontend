@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Articles from './components/Articles';
 import FrontPage from './components/FrontPage';
-import HomePage from './components/HomePage';
 import Login from './components/Login';
 import Messenger from './components/Messenger';
 import ProtectRoute from './components/ProtectRoute';

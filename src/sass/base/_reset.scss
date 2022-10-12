@@ -22,14 +22,10 @@
   --active-icon-color: #5ad539;
   --hover-color: #972e3d;
 }
-// body {
-//   background: #4e54c8;  
-//   background: linear-gradient(to left, #8f94fb, #4e54c8);  
-//   font-family: 'Raleway', sans-serif;
-// }
+
 
 .messenger.theme {
-  background-color: #0f0f0f;
+  --background-color: #0f0f0f;
   --text-color: #fff;
   --bg-color: #141b2bf0;
   --border-color: #213156bf;

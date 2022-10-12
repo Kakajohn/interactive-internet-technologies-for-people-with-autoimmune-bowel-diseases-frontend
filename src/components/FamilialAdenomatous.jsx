@@ -3,7 +3,7 @@ import React from 'react'
 const FamilialAdenomatous = () => {
   return (
    <> 
-   <h1 id='header'>Familial Adenomatous Polyposis</h1>
+   {/* <h1 id='header'>Familial Adenomatous Polyposis</h1> */}
     <h2 id='define-new-section'>Overview</h2>
                     <p style={{ textAlign: 'justify', fontFamily: 'Raleway, sans-serif' }}>
                       Familial adenomatous polyposis (FAP) is an inherited disorder characterized by cancer of the large

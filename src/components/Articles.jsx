@@ -6,7 +6,29 @@ import Footer from './Footer'
 import FamilialAdenomatous from './FamilialAdenomatous';
 import Crohn from './Crohn';
 const Articles = () => {
+  const [show, setShow] = useState(false);
 
+  // const expand = () => {
+  //   setShow(true);
+  //   document.getElementById('fap').style.visibility = 'visible';
+  //   document.getElementById('more').style.visibility = 'collapse';
+  //   document.getElementById('lesss').style.visibility = 'visible';
+  // }
+
+  // const collapse = () => {
+  //   setShow(false);
+  //   document.getElementById('fap').style.visibility = 'collapse'
+  //   document.getElementById('more').style.visibility = 'visible'
+  //   document.getElementById('lesss').style.visibility = 'collapse'
+  // }
+
+  // useEffect(()=>{
+  //   if(setShow(true)){
+  //     expand();
+  //   }else {
+  //     collapse();
+  //   }
+  // },[setShow])
   // const [click, setClick] = useState(false)
 
   // const [clicked, setClicked] = useState(false)
@@ -63,12 +85,19 @@ const Articles = () => {
     <NavigationBar />
     <div className="content-a">        
       <div className="secondary-a">
-        <div className="col-8 ">
-          <FamilialAdenomatous />
+      {/* <>
+            <h1>Familial Adenomatous Polyposis</h1>
+            <button onClick={expand} id='more'>Read more</button>
+            <button onClick={collapse} id='lesss'>Read less</button>
+      </> */}
+        <div className="col-8" id='fap'>
+         {/* {show && ( */}
+           <FamilialAdenomatous />
+          {/*   )} */}
            </div>
       </div>
       <div className="secondary-a" id='define-new-section'>
-      <div className="col-8 ">
+      <div className="col-8" id='crohn'>
         <Crohn />
       </div>
       </div>

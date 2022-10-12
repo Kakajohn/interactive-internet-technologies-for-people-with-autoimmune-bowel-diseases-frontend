@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef,useEffect, useState } from 'react';
 import '../sass/components/_medcaresection.scss'
+
 const MedCareSection = () => {
 
   const [click, setClick] = useState(false)
@@ -54,7 +55,7 @@ const MedCareSection = () => {
 
   return (
     <>
-    <div className="content">
+    <div className="content" id='main'>
        <div className="secondary">
        <h1 className='text-center'>Let's take a look at what telemedicine is.</h1>
         <div className="col-8">
@@ -69,9 +70,11 @@ const MedCareSection = () => {
                 limitation. But as the broadband infrastructure has improved, the use of telemedicine is becoming more
                 widely available. Telemedicine, in short, is the provision of medical services remotely through the use
                 of telecommunications.But to do this requires electronic transfer of medical data. Such medical data may
-                be: <button id='read' onClick={showmore} ref={ref}>Read more</button><button id='less' onClick={showless} ref={ref}>Read less</button>
-              </p> <p id='more'></p><p id='more2'></p>
-             {click && ( <span id='more'>
+                be: 
+                <button id='read' onClick={showmore} ref={ref}>Read more<i class="fa-duotone fa-square-chevron-down"></i></button>
+                <button id='less' onClick={showless} ref={ref}>Read less <i class="fa-duotone fa-square-chevron-down"></i></button>
+                </p> <p id='more'></p><p id='more2'></p>
+              {click && ( <span id='more'>
               <ul>
                 <li>
                   • Biomarkers (electric and not), ie in vivo measurements:It is now possible to transmit any in vivo

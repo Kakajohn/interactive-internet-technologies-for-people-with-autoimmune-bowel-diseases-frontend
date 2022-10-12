@@ -29,7 +29,12 @@ body {
   color: #ffffff;
   // height: 240vh;
 }
-
+@media screen and (max-width:992px){
+  .content-a{
+    top: 70px;
+    position: relative;
+  }
+}
 .content-a{
   display: flex;
   flex-direction: column;

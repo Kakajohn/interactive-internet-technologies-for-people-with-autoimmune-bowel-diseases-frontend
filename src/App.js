@@ -3,6 +3,7 @@ import Articles from './components/Articles';
 import FrontPage from './components/FrontPage';
 import Login from './components/Login';
 import Messenger from './components/Messenger';
+import Pagenotfound from './components/Pagenotfound';
 import ProtectRoute from './components/ProtectRoute';
 import Register from './components/Register';
 
@@ -38,6 +39,7 @@ function App() {
             }
           />
         </Routes>
+        {/* <Route path='/med4u/*' element={<Pagenotfound />}/> */}
       </BrowserRouter>
     </div>
   );

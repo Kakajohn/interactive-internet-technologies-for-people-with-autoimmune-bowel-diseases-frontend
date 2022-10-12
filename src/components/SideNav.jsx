@@ -9,12 +9,13 @@ const SideNav = () => {
 
     let expand = () => {
         setSee(true);
-        document.getElementById('expand').style.width = '250px'
+        document.getElementById('expand').style.visibility = 'collapse'
     }
 
     let collapse = () => {
         setSee(false);
         document.getElementById('collapse').style.width = '0px';
+        document.getElementById('expand').style.visibility = 'visible'
         document.getElementById('main').style.marginLeft = '0px'
     }
 
@@ -29,9 +30,9 @@ const SideNav = () => {
   return (
     <> 
     <p id='collapse'></p>
-    <span className='togg' id='expand' onClick={expand}> <FaBars /></span>
+    <span className='togg' id='expand' onClick={expand}> <FaBars id='icon'/></span>
     {see &&  (<div className="sidenav" id=''>
-        <Link to="" onClick={collapse} className='close' id='collapse' style={{transform: "rotate(45deg)"}}><FaPlusCircle /></Link>
+        <Link to="" onClick={collapse} className='close' id='collapse' style={{transform: "rotate(45deg)"}}><FaPlusCircle id='icon' /></Link>
         <Link to="/" id='option'><FaHome/></Link>
         <Link to="/med4u/articles" id='option'>Articles <FaArchive /></Link>
         <Link to="/med4u/chat" id='option'>Chat</Link>

@@ -65,7 +65,7 @@ const Telemedicine = () => {
               {/* )} */}
             </div>
             <div className="col-8">
-          <h1 className='text-center text-danger pt-2 pb-3'>Why we need telemedicine?.</h1>
+          <h1 className='text-center  pt-2 pb-3'>Why we need telemedicine?.</h1>
             <p>
                       The need for distance medical care The main needs covered by telemedicine applications are summarized
                       below:

@@ -4,7 +4,7 @@ const Autoimmune = () => {
   return (
     <>  
         <div className="col-8">
-    <h1 className='text-center text-danger pt-2 pb-3'>Autoimmune Diseases.</h1>
+    <h1 className='text-center pt-2 pb-3'>Autoimmune Diseases.</h1>
       <p>
                 "New developments, concerning the understanding of the mechanisms of development of autoimmune diseases,
                 have led to a more effective treatment and improvement of the course of this category of
@@ -45,7 +45,7 @@ const Autoimmune = () => {
              {/* )} */}
       </div>
       <div className="col-8">
-    <h1 className='text-center text-danger pt-2 pb-3'>Autoimmune bowel diseases</h1>
+    <h1 className='text-center  pt-2 pb-3'>Autoimmune bowel diseases</h1>
       <p>
                 The exact cause of idiopathic bowel disease has not yet been discovered. However, the prevailing view is
                 that it is due to the fact that environmental factors (eg childhood health, smoking, diet, infections,

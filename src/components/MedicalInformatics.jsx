@@ -4,7 +4,7 @@ const MedicalInformatics = () => {
   return (
     <>
         <div className="col-8">
-    <h1 className='text-center text-danger pt-2 pb-3'>Medical Informatics</h1>
+    <h1 className='text-center  pt-2 pb-3'>Medical Informatics</h1>
       <p>
                 Medical Informatics therefore has the content of basic research, clinical medicine, and health service
                 organization. In recent years it has escaped the narrow confines of the design and implementation of

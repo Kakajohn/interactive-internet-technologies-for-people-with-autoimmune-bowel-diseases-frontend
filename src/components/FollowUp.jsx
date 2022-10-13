@@ -4,7 +4,7 @@ const FollowUp = () => {
   return (
     <>
      <div className="col-8">
-          <h1 className='text-center text-danger pt-2 pb-3'>Follow-up of patients from home</h1>
+          <h1 className='text-center  pt-2 pb-3'>Follow-up of patients from home</h1>
             <p>
                       In this section we will discuss how useful its services are at home to people with chronic diseases.
                       Unfortunately, there are many chronic diseases that need constant medical attention. Changes in weight,

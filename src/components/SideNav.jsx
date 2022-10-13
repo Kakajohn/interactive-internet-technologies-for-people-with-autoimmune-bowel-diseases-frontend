@@ -1,7 +1,7 @@
 import React , { useRef,useEffect, useState } from 'react';
 import '../sass/components/_sidenav.scss'
 import { Link, useNavigate } from 'react-router-dom';
-import {FaPlusCircle, FaHome,FaBars,FaArchive,FaAngleDown,FaAngleUp, faPlussCircle } from "react-icons/fa";
+import {FaPlusCircle, FaHome,FaBars,FaArchive,FaArrowRight,FaCommentAlt,FaAngleDown,FaAngleUp, faPlussCircle } from "react-icons/fa";
 const SideNav = () => {
 
     let [see, setSee] = useState(false);
@@ -33,10 +33,10 @@ const SideNav = () => {
     <span className='togg' id='expand' onClick={expand}> <FaBars id='icon'/></span>
     {see &&  (<div className="sidenav" id=''>
         <Link to="" onClick={collapse} className='close' id='collapse' style={{transform: "rotate(45deg)"}}><FaPlusCircle id='icon' /></Link>
-        <Link to="/" id='option'><FaHome/></Link>
-        <Link to="/med4u/articles" id='option'>Articles <FaArchive /></Link>
-        <Link to="/med4u/chat" id='option'>Chat</Link>
-        <Link to="/med4u/Login" id='option'>Log out</Link>
+        <Link to="/" id='option'><span><FaHome/> Home</span></Link>
+        <Link to="/med4u/articles" id='option'><FaArchive /> Articles </Link>
+        <Link to="/med4u/chat" id='option'><FaCommentAlt /> Chat</Link>
+        <Link to="/med4u/Login" id='option'><FaArrowRight/> Log out</Link>
      </div>)}
     <div id='main'></div>
     </>

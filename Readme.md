@@ -34,3 +34,5 @@ This website is for patients with autoimmune diseases (such as **F.A.P.** and **
  ``npm start``
  View here the project after running : [view local](http://localhost:3000/)
 
+//TODO: (sidenavigation)  on scroll hide the menu
+//FIXME: (navigation) id navigation

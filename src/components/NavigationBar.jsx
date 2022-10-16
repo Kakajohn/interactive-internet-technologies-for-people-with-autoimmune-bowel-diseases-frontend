@@ -1,8 +1,8 @@
-import React , { useRef,useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React , { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../sass/components/_navbar.scss';
 import '../sass/components/_accordion.scss'
-import {FaPlusCircle,FaLinkedin} from "react-icons/fa";
+import {FaPlusCircle} from "react-icons/fa";
 const NavigationBar = () => {
 
   let [help, setHelp] = useState(false);

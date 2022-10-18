@@ -10,75 +10,29 @@
   text-align: justify;
 }
 
-  
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: none !important;
-    background-color: transparent;
-  }
-  ::-webkit-scrollbar {
-    width: 3px !important;
-    background-color: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #222230;
-  }
-
-.logo {
-  line-height: 60px;
+nav {
   position: fixed;
-  float: left;
-  margin: 16px 46px;
-  color: #000000;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-header {
-  display: flex;
-  height: 10vh;
-  align-items: center;
-  background-size: cover;
-  flex-direction: row;
-  justify-content: space-around;
-}
-nav {
   line-height: 2rem;
-}
-
-nav {
   ul {
   list-style: none;
-  background: #972e3d;
   overflow: hidden;
-  color: #000000;
   padding: 0;
+  line-height: 10px;
   text-align: right;
   margin: 0;
   padding-right: 40px;
   transition: 1s;
-}}
-
+  
+h3{
+  text-align: left;
+  margin: 10px;
+}
+}
 a:hover {
   text-decoration: none;
   list-style: none;
   overflow: hidden;
   color: #ffffff;
-}
-
-nav.black ul {
-  background: 0;
-}
-
-.menu-icon {
-  line-height: 60px;
-  width: 100%;
-  background: 0;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #0c0c0c;
-  display: none;
 }
 
 .topnav {
@@ -87,43 +41,28 @@ nav.black ul {
   position: fixed;
   right: 16px;
   border-radius: 5px;
-  .exit{
-    transform: rotate(45deg);
-  }
 }
-.helper{
-  font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    margin: 12px;
-    padding: 12px;
-    right: 16px;
-    cursor: pointer;
-    position: fixed;
-}
-@media screen and (max-width:992px){
-  .topnav{
-    top: 56px;
-  }
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
+
+.topnav {
+
+  a {
+  color: #fff;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  // filter: drop-shadow(1px -1px 1px white);
-  color: #fff;
+  color: #f2f2f2;
 }
 
+}
 
-.head{
-  display: flex;
-  justify-content: center;
+@media screen and (max-width:992px){
+  .topnav{
+    top: 56px;
+  }
 }
 
 .navbtn {
@@ -138,4 +77,75 @@ nav.black ul {
   border-radius: 10px;
   background: #0a0a0a9e
  }
+
+ .navBar {  
+  position: relative;
+}
+ 
+ .navBar button { 
+   position: fixed;  
+   left: 40px;  
+   top: 40px; 
+   z-index: 10; 
+   cursor: pointer;
+  }
+ 
+ .menuNav { 
+   overflow-y: scroll; 
+   list-style: none; 
+   position: fixed; 
+   top: 0;
+   background: #161818; 
+   left: 0;  
+   bottom: 0; 
+   height: auto;  
+  //  border-radius: 12px;
+   width: 0;
+   overflow: hidden; 
+   max-width: 290px; 
+   z-index: 9;
+    }
+ 
+ .menuNav.showMenu {  
+   width: 100%;
+}
+ 
+ a { 
+   display: block; 
+   padding: 10px 40px;
+   text-decoration: none;  
+   color: #3fffd2;text-transform: 
+   uppercase;
+   font-weight: bold;
+  }
+ 
+.menuNav li:first-child {
+  margin-top: 10rem ;
+}
+button{
+  background-color: unset;
+  border: unset;
+  color: #fff;
+}
+}
+#nv{
+  margin: 12px;
+}
+
+#icon{
+  margin: 12px;
+  transform: rotate(45deg);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #222230;
+  }
+
 

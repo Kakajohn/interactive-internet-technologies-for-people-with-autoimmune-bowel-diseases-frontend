@@ -28,19 +28,19 @@
             "helper" : "Pagination",
             "name" : "Helper1",
             "faicon" : "FaHoMe",
-            "link" : "/"
+            "link" : "#overview"
         },
         {
             "helper" : "",
             "name" : "Helper2",
             "faicon" : "FaHoMe",
-            "link" : "/"
+            "link" : "#symptoms"
         },
         {
             "helper" : "",
             "name" : "helper3",
             "faicon" : "FaHoMe",
-            "link" : "/"
+            "link" : "#diagnosis"
         }
     ]
 }

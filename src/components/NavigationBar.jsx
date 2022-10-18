@@ -1,9 +1,9 @@
-import React , { useRef,useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import '../sass/components/_navbar.scss';
-import '../sass/components/_accordion.scss'
+import React , { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {FaPlusCircle, FaHome,FaBars,FaArchive,FaArrowRight,FaCommentAlt } from "react-icons/fa";
 import infos from '../config/navbar.json'
+import '../sass/components/_navbar.scss';
+import '../sass/components/_accordion.scss'
 const NavigationBar = () => {
 
   const [navbarOpen, setNavBarOpen] = useState(false);
@@ -23,7 +23,7 @@ const NavigationBar = () => {
                     return(  
                     <>
                       <h3 id='pagination'>{item.helper}</h3>
-                      <li key={index} id='option'><Link to={item.link}>{item.name}</Link></li>
+                      <li key={index} id='option'><Link to={item.link}>{item.name} <img src={item.faicon} alt="" /></Link></li>
                     </>  
                   )
                   })}

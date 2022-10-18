@@ -2,46 +2,33 @@ import React , { useRef,useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../sass/components/_navbar.scss';
 import '../sass/components/_accordion.scss'
-import {FaPlusCircle,FaLinkedin} from "react-icons/fa";
+import {FaPlusCircle, FaHome,FaBars,FaArchive,FaArrowRight,FaCommentAlt } from "react-icons/fa";
 const NavigationBar = () => {
-
-  // let [help, setHelp] = useState(false);
-
-
-  // let show = () => {
-  //     setHelp(true);
-  //     document.getElementById('show').style.visibility = 'collapse'
-  // }
-
-  // let hide = () => {
-  //     setHelp(false);
-  //     document.getElementById('hide').style.width = '0px';
-  //     document.getElementById('show').style.visibility = 'visible'
-  // }
-
-  // useEffect(() =>{
-  //     if(help === false){
-  //         hide();
-  //     }else {
-  //         show();
-  //     }
-  // },[setHelp])
 
   const [navbarOpen, setNavBarOpen] = useState(false);
 
+  const handleToggle = () => {
+    setNavBarOpen(prev => !prev)
+  }
+
   return (
     <>     
-      {/* <p id='hide'></p> */}
-      {/* <a className='helper' id='show' onClick={show}>Help</a>
-      { help && ( */}
-      <div className="topnav" >
-          {/* <span  id='hide' onClick={hide}>
-            <FaPlusCircle className='exit'/></span> */}
-          <Link className="navbtn navbtn-3" to="/">Telemedicine</Link>
-          <Link className='navbtn navbtn-3' to="/med4u/articles">Distance</Link>
-          <Link className='navbtn navbtn-3' to="/med4u/chat">Autoimmune</Link>
-        </div>
-         {/* )}  */}
+      <nav className="topnav" >
+          <button onClick={handleToggle}>{navbarOpen ? <FaPlusCircle id='nv icon' /> : <FaBars id='nv'/>}</button>          
+            <div className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>
+               <button onClick={handleToggle}>{navbarOpen ? <FaPlusCircle id='icon' /> : <FaBars />}</button>        
+                <ul>
+                  <li><Link id='option'to="/"><span><FaHome/> Home</span></Link></li>
+                  <li><Link id='option' to="/med4u/articles" ><FaArchive /> Articles </Link></li>
+                  <li><Link id='option' to="/med4u/chat" ><FaCommentAlt /> Chat</Link></li>
+                  <li><Link id='option' to="/med4u/Login" ><FaArrowRight/> Log out</Link></li>
+                  <li><Link id='option' to="/">Telemedicine</Link></li>
+                  <li><Link id='option' to="/med4u/articles">Distance</Link></li>
+                  <li><Link id='option' to="/med4u/chat">Autoimmune</Link></li>
+                </ul>
+
+          </div>
+        </nav>
     </>   
   );
 };

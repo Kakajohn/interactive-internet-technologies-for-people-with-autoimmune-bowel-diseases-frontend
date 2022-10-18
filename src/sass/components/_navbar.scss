@@ -11,17 +11,6 @@
 }
 
   
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: none !important;
-    background-color: transparent;
-  }
-  ::-webkit-scrollbar {
-    width: 3px !important;
-    background-color: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #222230;
-  }
 
 .logo {
   line-height: 60px;
@@ -41,14 +30,13 @@ header {
   flex-direction: row;
   justify-content: space-around;
 }
-nav {
-  line-height: 2rem;
-}
+
 
 nav {
+  line-height: 2rem;
   ul {
   list-style: none;
-  background: #972e3d;
+  // background: #972e3d;
   overflow: hidden;
   color: #000000;
   padding: 0;
@@ -56,19 +44,16 @@ nav {
   margin: 0;
   padding-right: 40px;
   transition: 1s;
-}}
-
+}
 a:hover {
   text-decoration: none;
   list-style: none;
   overflow: hidden;
   color: #ffffff;
 }
-
 nav.black ul {
   background: 0;
 }
-
 .menu-icon {
   line-height: 60px;
   width: 100%;
@@ -91,33 +76,22 @@ nav.black ul {
     transform: rotate(45deg);
   }
 }
-.helper{
-  font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    margin: 12px;
-    padding: 12px;
-    right: 16px;
-    cursor: pointer;
-    position: fixed;
-}
+
 @media screen and (max-width:992px){
   .topnav{
     top: 56px;
   }
 }
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
+  color: #fff;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  // filter: drop-shadow(1px -1px 1px white);
-  color: #fff;
+  color: #f2f2f2;
 }
 
 
@@ -138,4 +112,74 @@ nav.black ul {
   border-radius: 10px;
   background: #0a0a0a9e
  }
+
+ .navBar {  
+  position: relative;
+}
+ 
+ .navBar button { 
+   position: fixed;  
+   left: 40px;  
+   top: 40px; 
+   z-index: 10; 
+   cursor: pointer;
+  }
+ 
+ .menuNav { 
+   overflow-y: scroll; 
+   list-style: none; 
+   position: fixed; 
+   top: 0;
+   background: #161818; 
+   left: 0;  
+   bottom: 0; 
+   height: 100vh;  
+   width: 0;
+   overflow: hidden; 
+   max-width: 290px; 
+   z-index: 9;
+            }
+ 
+ .menuNav.showMenu {  
+   width: 100%;
+}
+ 
+ a { 
+   display: block; 
+   padding: 10px 40px;
+   text-decoration: none;  
+   color: #3fffd2;text-transform: 
+   uppercase;
+   font-weight: bold;
+  }
+ 
+ .menuNav li:first-child {
+  margin-top: 0rem;
+}
+button{
+  background-color: unset;
+  border: unset;
+  color: #fff;
+}
+}
+#nv{
+  margin: 12px;
+}
+
+#icon{
+  margin: 12px;
+  transform: rotate(45deg);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+  }
+::-webkit-scrollbar-thumb {
+    background-color: #222230;
+  }
+
 

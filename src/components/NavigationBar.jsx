@@ -1,42 +1,35 @@
-import React , { useEffect, useState } from 'react';
+import React , { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {FaPlusCircle, FaHome,FaBars,FaArchive,FaArrowRight,FaCommentAlt } from "react-icons/fa";
+import infos from '../config/navbar.json'
 import '../sass/components/_navbar.scss';
 import '../sass/components/_accordion.scss'
-import {FaPlusCircle} from "react-icons/fa";
 const NavigationBar = () => {
 
-  let [help, setHelp] = useState(false);
+  const [navbarOpen, setNavBarOpen] = useState(false);
 
-
-  let show = () => {
-      setHelp(true);
-      document.getElementById('show').style.visibility = 'collapse'
+  const handleToggle = () => {
+    setNavBarOpen(prev => !prev)
   }
-
-  let hide = () => {
-      setHelp(false);
-      document.getElementById('hide').style.width = '0px';
-      document.getElementById('show').style.visibility = 'visible'
-  }
-
-  useEffect(() =>{
-      if(help === false){
-          hide();
-      }else {
-          show();
-      }
-  },[setHelp])
 
   return (
     <>     
-      <p id='hide'></p>
-      <a className='helper' id='show' onClick={show}>Help</a>
-      { help && (<div className="topnav" >
-          <span  id='hide' onClick={hide}><FaPlusCircle className='exit'/></span>
-          <Link className="navbtn navbtn-3" to="/">Telemedicine</Link>
-          <Link className='navbtn navbtn-3' to="/med4u/articles">Distance</Link>
-          <Link className='navbtn navbtn-3' to="/med4u/chat">Autoimmune</Link>
-        </div>)} 
+      <nav className="topnav" >
+          <button onClick={handleToggle}>{navbarOpen ? <FaPlusCircle id='nv icon' /> : <FaBars id='nv'/>}</button>          
+            <div className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>
+             <button onClick={handleToggle}>{navbarOpen ? <FaPlusCircle id='icon' /> : <FaBars />}</button>        
+              <ul> 
+                {infos.NavInfos.map((item,index)=>{
+                    return(  
+                    <>
+                      <h3 id='pagination'>{item.helper}</h3>
+                      <li key={index} id='option'><Link to={item.link}>{item.name} <img src={item.faicon} alt="" /></Link></li>
+                    </>  
+                  )
+                  })}
+               </ul>
+           </div>
+        </nav>
     </>   
   );
 };
